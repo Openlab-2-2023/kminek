@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="sk">
+<html lang="sk"> 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Životopis - Cristiano Ronaldo</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Životopis - Cristiano Ronaldo</title> 
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <div class="container">
         
+        <!-- Hlavná hlavička stránky s názvom a fotkou -->
         <header>
             <h1>Cristiano Ronaldo</h1>
             <img src="https://hips.hearstapps.com/hmg-prod/images/cristiano-ronaldo-of-portugal-reacts-as-he-looks-on-during-news-photo-1725633476.jpg?crop=0.666xw:1.00xh;0.180xw,0&resize=640:*" alt="Fotka Cristiana Ronalda" class="profile-pic">
         </header>
         
-        
+        <!-- Sekcia "O Mne" - popis Cristiana Ronalda -->
         <section class="about">
             <h2>O Mne</h2>
             <p>
@@ -23,20 +24,39 @@
             </p>
         </section>
 
-        
+        <!-- Sekcia "Kariéra" - popis jeho futbalovej kariéry a prestupov -->
         <section class="career">
             <h2>Kariéra</h2>
             <p>
                 Ronaldo začal svoju profesionálnu futbalovú kariéru v Sporting CP, no v roku 2003 prestúpil do <strong>Manchester United</strong>, kde sa rýchlo stal jedným z najlepších hráčov. 
                 V roku 2009 prestúpil do <strong>Real Madrid</strong>, kde dosiahol nespočetné úspechy vrátane štyroch triumfov v <em>Lige Majstrov</em>.
             </p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVeCnAmfCF_z9hywcHGixQbxze98bPZZckDA&s alt="Cristiano Ronaldo v Manchestri United" class="career-pic">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVeCnAmfCF_z9hywcHGixQbxze98bPZZckDA&s" alt="Cristiano Ronaldo v Manchestri United" class="career-pic">
             <p>
                 Po deviatich rokoch v Reale Madrid prestúpil v roku 2018 do <strong>Juventus</strong>, kde pokračoval vo svojej skvelej forme. V roku 2021 sa opäť vrátil do Manchester United, aby pomohol klubu dosiahnuť ďalšie úspechy.
             </p>
-            <img src="https://spravy.rtvs.sk/wp-content/uploads/2024/07/Euro_2024_Ronaldo_vs._Mbappe470266-1-scaled-e1720007567971.jpg" alt="Cristiano Ronaldo reprezentuje Portugalsko" class="career-pic">
         </section>
-        
+
+        <!-- Sekcia "Prestupy" s tlačidlom na zobrazenie prestupov -->
+        <section class="transfers">
+            <h2>Prestupy</h2>
+            <!-- Label funguje ako tlačidlo na zobrazenie prestupov -->
+            <label for="show-transfers" class="show-button">Zobraziť prestupy</label>
+            <!-- Checkbox slúži na kontrolu, či je prestupový zoznam zobrazený alebo skrytý -->
+            <input type="checkbox" id="show-transfers" hidden>
+            <!-- Zoznam prestupov, ktorý sa zobrazí po kliknutí na tlačidlo -->
+            <div class="transfer-details">
+                <ul>
+                    <li>2003: Sporting CP → Manchester United</li>
+                    <li>2009: Manchester United → Real Madrid</li>
+                    <li>2018: Real Madrid → Juventus</li>
+                    <li>2021: Juventus → Manchester United</li>
+                    <li>2023: Manchester United → Al-Nassr</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sekcia "Ocenenia" - zoznam úspechov Cristiana Ronalda -->
         <section class="awards">
             <h2>Ocenenia a úspechy</h2>
             <ul>
@@ -46,17 +66,6 @@
                 <li>Víťaz Európskeho šampionátu s Portugalskom: 2016</li>
                 <li>Najlepší hráč FIFA: 2x (2016, 2017)</li>
             </ul>
-        </section>
-
-        
-        <section class="gallery">
-            <h2>Momentky z kariéry</h2>
-            <div class="gallery-images">
-                <img src="https://www.hetrik.sk/laravel-filemanager/images/shares/old/ron-akro-faer.jpg" alt="Ronaldo počas zápasu" class="gallery-img">
-                <img src="https://sportky.zoznam.sk/cacheImg/obr/1200px/cristiano-ronaldo-portugalsko-ms-714915.jpg" alt="Ronaldo na Majstrovstvách sveta" class="gallery-img">
-                <img src="https://sportky.zoznam.sk/cacheImg/obr/daily_content/2/671//19671.jpg" alt="Cristiano Ronaldo s trofejou" class="gallery-img">
-                <img src="https://ichef.bbci.co.uk/news/1024/branded_sport/13546/production/_90347197_ronaldo_empics2.jpg" alt="Ronaldo oslavuje Euro 2016" class="gallery-img">
-            </div>
         </section>
     </div>
 </body>
